@@ -3,6 +3,7 @@ function startupComplete() {
 }
 
 function whenReady() {
-    startupAnimation(true, startupComplete);
+    startupAnimation($("#e1"), false, startupComplete);
+    startupAnimation($("#e2"), true,  startupComplete);
 }
 $(document).ready(whenReady);

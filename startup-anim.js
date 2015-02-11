@@ -39,8 +39,8 @@ function animateStartupElements(isPersistent, completion) {
 }
 
 // Skip everything and come here if you're a starter
-function startupAnimation(isPersistent, completion) {
-    var e = appendStartupElementsTo($("body"));
+function startupAnimation(appendTo, isPersistent, completion) {
+    var e = appendStartupElementsTo(appendTo);
     animateStartupElements(isPersistent, completion);
     return e;
 }
