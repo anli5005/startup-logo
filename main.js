@@ -1,3 +1,8 @@
-function whenReady() {
+function startupComplete() {
+    console.log("Startup complete!");
 }
-$(document).ready(whenReady)
+
+function whenReady() {
+    startupAnimation(true, startupComplete);
+}
+$(document).ready(whenReady);
