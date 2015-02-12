@@ -1,11 +1,11 @@
-#startup-anim {
+.startup-anim {
     width: 375px;
     height: 375px;
     background-image: url("startup_1.png");
     background-position: center;
     background-repeat: no-repeat;
 }
-#startup-anim img {
+.startup-anim img {
     display: block;
     width: 250px;
     height: 250px;

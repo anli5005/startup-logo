@@ -8,7 +8,7 @@
 // This provides the necessary elements needed. Of course, if you have them, you can just skip this part.
 // The CSS selector is #startup-anim
 function appendStartupElementsTo(element) {
-    var div = $("<div id='startup-anim'></div>");
+    var div = $("<div class='startup-anim'></div>");
     var img = $("<img></img>");
     img.attr("src", "startup_2.png");
     div.append(img).appendTo(element);
@@ -18,8 +18,8 @@ function appendStartupElementsTo(element) {
 // Step 2. Animate
 // Pass true if you want the startup image to stay there
 function animateStartupElements(isPersistent, completion) {
-    var img = $("#startup-anim img");
-    var img2 = $("#startup-anim");
+    var img = $(".startup-anim img");
+    var img2 = $(".startup-anim");
     
     img.hide();
     function secondAnimation() {
